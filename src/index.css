@@ -88,10 +88,11 @@ body {
 .btn.toggle-btn[aria-pressed="true"] {
   border-color: #4d4d4d;
   text-decoration: underline;
+  background-color: navy;
 }
 .btn__danger {
   background-color: #ca3c3c;
-  border-color: #bd2130;
+  border-color: yellow;
   color: #fff;
 }
 .btn__filter {

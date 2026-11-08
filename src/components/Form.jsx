@@ -8,6 +8,10 @@ function Form(props) {
   // working through MDN's React tutorial.
   function handleSubmit(event) {
     event.preventDefault();
+    if(name.trim()===""){
+      alert("할 일을 입력하세요");
+      return;
+    }
     props.addTask(name);
     setName("");
   }
@@ -20,7 +24,7 @@ function Form(props) {
     <form onSubmit={handleSubmit}>
       <h2 className="label-wrapper">
         <label htmlFor="new-todo-input" className="label__lg">
-          What needs to be done?
+          오늘 당신이 해야하는 일은 무엇인가요?
         </label>
       </h2>
 
